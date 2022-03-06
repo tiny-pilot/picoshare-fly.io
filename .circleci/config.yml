@@ -10,7 +10,7 @@ jobs:
       # https://github.com/superfly/flyctl/issues/394#issuecomment-815890166
       FLYCTL_VERSION: "latest"
       FLY_REGION: "iad"
-      PICOSHARE_IMAGE: "mtlynch/picoshare:0.1.2"
+      PICOSHARE_IMAGE: "mtlynch/picoshare:0.1.3"
     steps:
       - checkout
       - run:
