@@ -24,8 +24,7 @@ jobs:
           command: |
             "${HOME}/.fly/bin/flyctl" deploy \
               --access-token "${FLY_ACCESS_TOKEN}" \
-              --region="${REGION}" \
-              --image "${PICOSHARE_IMAGE}"
+              --region="${REGION}"
 workflows:
   version: 2
   prod_deploy:
