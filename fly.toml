@@ -6,12 +6,14 @@ processes = []
 
 [env]
   PORT = "8080"
-  PS_BEHIND_PROXY="yes"
-  PICOSHARE_IMAGE="mtlynch/picoshare:1.0.5"
+  PS_BEHIND_PROXY = "yes"
 
 [experimental]
   allowed_public_ports = []
   auto_rollback = true
+
+[build]
+  image = "mtlynch/picoshare:1.0.5"
 
 [mounts]
 source="pico_data"
