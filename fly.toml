@@ -7,6 +7,10 @@ processes = []
 [env]
   PORT = "8080"
   PS_BEHIND_PROXY = "yes"
+  LITESTREAM_BUCKET="picoshare-tinypilot"
+  LITESTREAM_ENDPOINT="s3.us-west-000.backblazeb2.com"
+  # Backblaze key ID for tinypilot-picoshare. Key is in fly secrets.
+  LITESTREAM_ACCESS_KEY_ID = "0004c7a064cefd30000000010"
 
 [experimental]
   allowed_public_ports = []
