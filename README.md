@@ -16,3 +16,5 @@ PicoShare doesn't do well on [files larger than 1 GB](https://github.com/mtlynch
 ## Updating PicoShare versions
 
 To update to a new version of PicoShare, create a PR that updates the version of the `build.image` property within the `fly.toml` file.
+
+When the PR is merged, CircleCI will automatically deploy the new version of PicoShare. TinyPilot's files on PicoShare will persist due to the persistent volume (specified in the `mounts` property of `fly.toml`).
