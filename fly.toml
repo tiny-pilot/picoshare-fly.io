@@ -17,7 +17,7 @@ processes = []
   auto_rollback = true
 
 [build]
-  image = "mtlynch/picoshare:1.4.0"
+  image = "mtlynch/picoshare:1.4.1"
 
 [mounts]
 source="pico_data"
